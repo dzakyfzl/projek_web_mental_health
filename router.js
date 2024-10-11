@@ -5,11 +5,9 @@ const port = '3000'//Port Localhost
 
 //Menyediakan semua image pada folder src ke online
 app.use('/src',express.static(path.join(__dirname, 'src')))
+//Menambahkan folder css termasuk index html
+app.use('/',express.static(path.join(__dirname, 'page')))
 
-//merender index.html
-app.get('/',(req,res) => {
-    res.sendFile(path.resolve(__dirname, 'index.html'))
-})
 
 //Memulai Server
 app.listen(port,()=>{
