@@ -554,61 +554,6 @@ video {
   display: none;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
-.invisible {
-  visibility: hidden;
-}
-
-.float-right {
-  float: right;
-}
-
-.m-0 {
-  margin: 0px;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
 .flex {
   display: flex;
 }
@@ -617,16 +562,8 @@ video {
   width: 1.5rem;
 }
 
-.items-end {
-  align-items: flex-end;
-}
-
 .items-center {
   align-items: center;
-}
-
-.items-baseline {
-  align-items: baseline;
 }
 
 .items-stretch {
@@ -641,44 +578,16 @@ video {
   padding: 0.75rem;
 }
 
-.p-1 {
-  padding: 0.25rem;
-}
-
-.pr-1 {
-  padding-right: 0.25rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
-}
-
 .pb-3 {
   padding-bottom: 0.75rem;
-}
-
-.pt-3 {
-  padding-top: 0.75rem;
-}
-
-.pr-8 {
-  padding-right: 2rem;
 }
 
 .pr-5 {
   padding-right: 1.25rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.align-top {
-  vertical-align: top;
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .shadow-2xl {
@@ -687,25 +596,38 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.hover\:items-center:hover {
-  align-items: center;
+.hover\:bg-slate-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(148 163 184 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-400:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.hover\:to-slate-400:hover {
+  --tw-gradient-to: #94a3b8 var(--tw-gradient-to-position);
 }
 
 @media not all and (min-width: 640px) {
   .max-sm\:invisible {
     visibility: hidden;
-  }
-}
-
-@media (min-width: 640px) {
-  .sm\:invisible {
-    visibility: hidden;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:visible {
-    visibility: visible;
   }
 }
 
