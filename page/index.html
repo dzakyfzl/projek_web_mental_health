@@ -22,8 +22,9 @@
 <body>
     <header class="shadow-2xl flex top-0 fixed bg-white w-full justify-between items-center">
       <div class="flex items-stretch">
-        <div class="p-3 hover:bg-gray-200">
-          <button onclick="openSidebar()"><img class="w-6" src="/src/image/menu-bar.png"></button>
+        <div class="p-3 max-md:hover:bg-gray-200">
+          <button class="md:hidden" onclick="openSidebar()"><img class="w-6" src="/src/image/menu-bar.png"></button>
+          <a class="max-md:hidden font-inter font-bold" href="/">(PaGarGung)</a>
         </div>
         <div class="p-3 max-sm:invisible lg:visible hover:bg-gray-200"><a href="#">Beranda</a></div>
         <div class="p-3 max-sm:invisible lg:visible hover:bg-gray-200"><a href="#">Tes</a></div>
@@ -37,7 +38,7 @@
       <div class="h-full px-3 py-4 overflow-y-auto bg-gray-900 ">
          <ul class="space-y-2 font-semibold">
             <li class="flex justify-between">
-              <h1 class="px-2 py-1 text-gray-50 font-extrabold font-inter">PaGarGung</h1>
+              <a class="px-2 py-1 text-gray-50 font-extrabold font-inter" href="/">(PaGarGung)</a>
               <button onclick="closeSidebar()" class="px-2 py-1 rounded-md border-2 border-red-300 text-red-300">X</button>
             </li>
             <li>
@@ -97,7 +98,7 @@
             </p>
           </div>
           <div class="flex-col lg:px-5 max-lg:px-5 max-sm:px-5 max-sm:my-8 sm:my-10">
-            <div class="items-center flex"> <!--Control-->
+            <div class="items-center flex"> 
               <div class="bg-slate-500 rounded-full mx-auto w-10 h-10">
                 <p class="text-center">.</p>
               </div>
@@ -110,7 +111,7 @@
             </p>
           </div>
           <div class="flex-col lg:px-5 max-lg:px-5 max-sm:px-5 max-sm:my-8 sm:my-10">
-            <div class="items-center flex"> <!--Control-->
+            <div class="items-center flex"> 
               <div class="bg-slate-500 rounded-full mx-auto w-10 h-10">
                 <p class="text-center">.</p>
               </div>

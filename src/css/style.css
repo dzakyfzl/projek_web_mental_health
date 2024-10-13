@@ -570,31 +570,8 @@ video {
   z-index: 40;
 }
 
-.m-10 {
-  margin: 2.5rem;
-}
-
-.m-32 {
-  margin: 8rem;
-}
-
 .m-36 {
   margin: 9rem;
-}
-
-.my-20 {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-}
-
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.my-10 {
-  margin-top: 2.5rem;
-  margin-bottom: 2.5rem;
 }
 
 .mx-auto {
@@ -602,9 +579,13 @@ video {
   margin-right: auto;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+.my-20 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .ms-3 {
@@ -615,28 +596,12 @@ video {
   margin-top: 2.5rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
-.mb-4 {
-  margin-bottom: 1rem;
-}
-
 .mt-20 {
   margin-top: 5rem;
 }
 
-.block {
-  display: block;
-}
-
 .flex {
   display: flex;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-10 {
@@ -668,13 +633,13 @@ video {
   width: 16rem;
 }
 
+.w-full {
+  width: 100%;
+}
+
 .w-max {
   width: -moz-max-content;
   width: max-content;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .-translate-x-full {
@@ -881,6 +846,10 @@ video {
   font-weight: 600;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .text-gray-50 {
   --tw-text-opacity: 1;
   color: rgb(249 250 251 / var(--tw-text-opacity));
@@ -894,10 +863,6 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.opacity-100 {
-  opacity: 1;
 }
 
 .shadow-2xl {
@@ -934,21 +899,25 @@ video {
 }
 
 @media not all and (min-width: 1024px) {
-  .max-lg\:my-8 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-  }
-
   .max-lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
   }
+
+  .max-lg\:hover\:bg-gray-200:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  }
 }
 
 @media not all and (min-width: 768px) {
-  .max-md\:my-8 {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+  .max-md\:hidden {
+    display: none;
+  }
+
+  .max-md\:hover\:bg-gray-200:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
   }
 }
 
@@ -999,6 +968,12 @@ video {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 1024px) {
   .lg\:visible {
     visibility: visible;
@@ -1006,6 +981,10 @@ video {
 
   .lg\:flex {
     display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
   }
 
   .lg\:px-5 {
