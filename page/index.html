@@ -10,8 +10,6 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <!-- Script -->
-    <script src="/src/script/index.js"></script>
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="/src/css/style.css">
 
@@ -25,7 +23,7 @@
     <header class="shadow-2xl flex justify-between items-center">
       <div class="flex items-stretch">
         <div class="p-3 hover:bg-gray-200">
-          <a href="#"><img class="w-6" src="/src/image/menu-bar.png"></a>
+          <button onclick="openSidebar()"><img class="w-6" src="/src/image/menu-bar.png"></button>
         </div>
         <div class="p-3 max-sm:invisible lg:visible hover:bg-gray-200"><a href="#">Beranda</a></div>
         <div class="p-3 max-sm:invisible lg:visible hover:bg-gray-200"><a href="#">Tes</a></div>
@@ -33,12 +31,41 @@
       </div>
       <div class="flex pt-3 pb-3 pr-5"><a href="#">Account</a></div>
     </header>
+
+
+    <aside id="Sidebar" class="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full">
+      <div class="h-full px-3 py-4 overflow-y-auto bg-gray-900 ">
+         <ul class="space-y-2 font-semibold">
+            <li class="flex justify-between">
+              <h1 class="px-2 py-1 text-gray-50 font-extrabold font-inter">PaGarGung</h1>
+              <button onclick="closeSidebar()" class="px-2 py-1 rounded-md border-2 border-red-300 text-red-300">X</button>
+            </li>
+            <li>
+               <a href="/" class="flex items-center p-2 text-gray-50 rounded-lg  hover:bg-gray-800 group">
+                  <span class="ms-3">Beranda</span>
+               </a>
+            </li>
+            <li>
+              <a href="/" class="flex items-center p-2 text-gray-50 rounded-lg  hover:bg-gray-800 group">
+                 <span class="ms-3">Tes</span>
+              </a>
+           </li>
+           <li>
+            <a href="/" class="flex items-center p-2 text-gray-50 rounded-lg  hover:bg-gray-800 group">
+               <span class="ms-3">Artikel</span>
+            </a>
+         </li>
+         </ul>
+      </div>
+   </aside>
+
+
     <div class="max-sm:mx-3 sm:mx-10">
       <div class="my-20 py-20 text-center rounded-2xl bg-gradient-to-bl from-cyan-400 to-green-300">
-        <h1 class="text-center font-poppins font-semibold text-7xl max-sm:text-4xl">Apa Itu Mental Health?</h1>
-        <button class="mt-10 py-2 px-4 rounded-xl shadow-lg bg-blue-500 hover:bg-blue-700 text-white font-poppins">Mulai Test</button>
+        <h1 class="text-center font-poppins font-medium text-7xl max-sm:text-4xl">Apa Itu Mental Health?</h1>
+        <button class="mt-10 py-2 px-4 rounded-xl shadow-lg bg-blue-500 hover:bg-blue-700 text-white font-poppins">Kenali Selengkapnya</button>
       </div>
-      <div class=" xl:px-5 max-lg:px-5 max-sm:px-5 items-center text-justify max-sm:text-sm">
+      <div class=" xl:px-5 max-lg:px-5 max-sm:px-5 items-center font-poppins font-extralight text-justify max-sm:text-sm">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse mollis ultrices blandit. Ut porta ipsum at mauris faucibus, 
           sed feugiat risus pulvinar. Vivamus dui ipsum, cursus eu urna vel, efficitur pretium justo. 
           Maecenas a posuere mi. Donec nec elit in risus hendrerit blandit quis vitae lorem. Aliquam in venenatis erat. 
@@ -48,4 +75,6 @@
       </div>
     </div>
 </body>
+<!-- Script -->
+<script src="/src/script/index.js"></script>
 </html>
