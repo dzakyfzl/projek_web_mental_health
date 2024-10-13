@@ -570,13 +570,41 @@ video {
   z-index: 40;
 }
 
-.m-5 {
-  margin: 1.25rem;
+.m-10 {
+  margin: 2.5rem;
+}
+
+.m-32 {
+  margin: 8rem;
+}
+
+.m-36 {
+  margin: 9rem;
 }
 
 .my-20 {
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .ms-3 {
@@ -591,8 +619,24 @@ video {
   margin-top: 2rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.block {
+  display: block;
+}
+
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 .h-10 {
@@ -627,6 +671,10 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .-translate-x-full {
@@ -708,6 +756,11 @@ video {
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-bl {
   background-image: linear-gradient(to bottom left, var(--tw-gradient-stops));
 }
@@ -732,10 +785,6 @@ video {
 
 .p-3 {
   padding: 0.75rem;
-}
-
-.p-5 {
-  padding: 1.25rem;
 }
 
 .px-2 {
@@ -847,6 +896,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.opacity-100 {
+  opacity: 1;
+}
+
 .shadow-2xl {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
@@ -881,9 +934,21 @@ video {
 }
 
 @media not all and (min-width: 1024px) {
+  .max-lg\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
   .max-lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+}
+
+@media not all and (min-width: 768px) {
+  .max-md\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -895,6 +960,11 @@ video {
   .max-sm\:mx-3 {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+  }
+
+  .max-sm\:my-8 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 
   .max-sm\:px-5 {
@@ -918,11 +988,29 @@ video {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
   }
+
+  .sm\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .sm\:block {
+    display: block;
+  }
 }
 
 @media (min-width: 1024px) {
   .lg\:visible {
     visibility: visible;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 }
 
