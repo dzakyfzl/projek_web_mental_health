@@ -18,10 +18,10 @@
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
     </style>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
     </style>
   </head>
 
@@ -37,27 +37,49 @@
           <a
             class="max-md:hidden font-inter font-bold text-greenwhitey text-xl"
             href="/"
-            >(PaGarGung)</a
+            >PaGarGung</a
           >
         </div>
         <div
-          class="p-3 max-sm:invisible lg:visible font-archivo text-greenwhitey hover:bg-ijotaik"
+          class="p-3 max-sm:invisible lg:visible font-lato text-greenwhitey text-medium relative group uppercase"
         >
-          <a href="#">Beranda</a>
+          <a href="#" class="inline-block relative">
+            Beranda
+            <span
+              class="absolute left-0 bottom-0 w-0 h-1 bg-greenwhitey transition-all duration-500 transform group-hover:w-full"
+            ></span>
+          </a>
         </div>
         <div
-          class="p-3 max-sm:invisible lg:visible font-archivo text-greenwhitey hover:bg-ijotaik"
+          class="p-3 max-sm:invisible lg:visible font-lato text-greenwhitey relative group uppercase"
         >
-          <a href="#">Tes</a>
+          <a href="#" class="inline-block relative">
+            Tes
+            <span
+              class="absolute left-0 bottom-0 w-0 h-1 bg-greenwhitey transition-all duration-500 transform group-hover:w-full"
+            ></span>
+          </a>
         </div>
         <div
-          class="p-3 max-sm:invisible lg:visible font-archivo text-greenwhitey hover:bg-ijotaik"
+          class="p-3 max-sm:invisible lg:visible font-lato text-greenwhitey relative group uppercase"
         >
-          <a href="#">Artikel</a>
+          <a href="#" class="inline-block relative">
+            Artikel
+            <span
+              class="absolute left-0 bottom-0 w-0 h-1 bg-greenwhitey transition-all duration-500 transform group-hover:w-full"
+            ></span>
+          </a>
         </div>
       </div>
-      <div class="text-greenwhitey flex pt-3 pb-3 pr-5">
-        <a href="#">Account</a>
+      <div
+        class="p-3 max-sm:invisible lg:visible font-lato text-greenwhitey relative group uppercase"
+      >
+        <a href="#" class="inline-block relative">
+          Account
+          <span
+            class="absolute left-0 bottom-0 w-0 h-0.8 bg-greenwhitey transition-all duration-500 transform group-hover:w-full"
+          ></span>
+        </a>
       </div>
     </header>
 
@@ -83,7 +105,7 @@
               href="/"
               class="flex items-center p-2 text-gray-50 rounded-lg hover:bg-gray-800 group"
             >
-              <img class="w-4 h-4" src="/src/image/home-icon-sidebar.svg" >
+              <img class="w-4 h-4" src="/src/image/home-icon-sidebar.svg" />
               <span class="ms-3">Beranda</span>
             </a>
           </li>
@@ -92,7 +114,7 @@
               href="/"
               class="flex items-center p-2 text-gray-50 rounded-lg hover:bg-gray-800 group"
             >
-              <img class="w-4 h-4" src="/src/image/test-sidebar.svg">
+              <img class="w-4 h-4" src="/src/image/test-sidebar.svg" />
               <span class="ms-3">Tes</span>
             </a>
           </li>
@@ -101,7 +123,7 @@
               href="/"
               class="flex items-center p-2 text-gray-50 rounded-lg hover:bg-gray-800 group"
             >
-              <img class="w-4 h-4" src="/src/image/article-sidebar.svg">
+              <img class="w-4 h-4" src="/src/image/article-sidebar.svg" />
               <span class="ms-3">Artikel</span>
             </a>
           </li>
@@ -113,11 +135,13 @@
       <div
         class="my-20 py-20 xl:my-10 text-center rounded-2xl bg-gradient-to-bl from-cyan-400 to-green-300"
       >
-        <h1 class="text-center text-sky-950 font-archivo font-bold text-7xl max-sm:text-4xl">
+        <h1
+          class="text-center text-sky-950 font-archivo font-bold text-7xl max-sm:text-4xl"
+        >
           Apa Itu Mental Health?
         </h1>
         <button
-          class="mt-10 font-poppins py-2 px-4 rounded-xl shadow-lg bg-blue-500 hover:bg-blue-700 text-white"
+          class="mt-10 font-poppins py-2 px-4 rounded-xl shadow-lg bg-blue-500 hover:bg-blue-700 text-white transition-all duration-500"
         >
           Kenali Selengkapnya
         </button>
@@ -138,14 +162,16 @@
 
       <div class="">
         <div class="mt-20 mb-4 xl:my-10">
-          <h1 class="text-center font-extrabold font-pito lg:text-5xl sm:text-3xl text-sky-600">
+          <h1
+            class="text-center font-extrabold font-pito lg:text-5xl sm:text-3xl text-sky-600"
+          >
             Persebaran Mental Ilness di Indonesia
           </h1>
         </div>
         <div
-          class="flex justify-center items-center p-10 rounded-2xl bg-gradient-to-bl from-cyan-400 to-green-300"
+          class="flex justify-center items-center p-10 rounded-2xl bg-gradient-to-bl from-cyan-400 to-green-300 indonesia-map"
         >
-          <img class="w-max h-max" src="/src/image/indonesia.svg" />
+          <img class="w-max h-max" src="/src/image/indonesia.svg" alt="map" />
         </div>
         <div class="sm:block lg:flex justify-between">
           <div
