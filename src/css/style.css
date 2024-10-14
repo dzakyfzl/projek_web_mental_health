@@ -604,6 +604,10 @@ video {
   margin-top: 5rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -625,6 +629,10 @@ video {
   height: 100vh;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -644,6 +652,10 @@ video {
 .w-max {
   width: -moz-max-content;
   width: max-content;
+}
+
+.w-4 {
+  width: 1rem;
 }
 
 .-translate-x-full {
@@ -713,6 +725,11 @@ video {
 .border-red-300 {
   --tw-border-opacity: 1;
   border-color: rgb(252 165 165 / var(--tw-border-opacity));
+}
+
+.border-ijotaik {
+  --tw-border-opacity: 1;
+  border-color: rgb(4 54 74 / var(--tw-border-opacity));
 }
 
 .bg-blue-500 {
@@ -817,11 +834,19 @@ video {
 }
 
 .font-archivo {
-  font-family: Archivo Black, sans-serif;
+  font-family: Archivo, sans-serif;
 }
 
 .font-inter {
   font-family: Inter, sans-serif;
+}
+
+.font-poppins {
+  font-family: poppins, sans-serif;
+}
+
+.font-pito {
+  font-family: Nunito, sans-serif;
 }
 
 .text-3xl {
@@ -837,6 +862,16 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-bold {
@@ -879,14 +914,44 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-bluey {
+.text-blue-500 {
   --tw-text-opacity: 1;
-  color: rgb(100 204 197 / var(--tw-text-opacity));
+  color: rgb(59 130 246 / var(--tw-text-opacity));
 }
 
-.text-black {
+.text-sky-600 {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(2 132 199 / var(--tw-text-opacity));
+}
+
+.text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.text-blue-700 {
+  --tw-text-opacity: 1;
+  color: rgb(29 78 216 / var(--tw-text-opacity));
+}
+
+.text-sky-700 {
+  --tw-text-opacity: 1;
+  color: rgb(3 105 161 / var(--tw-text-opacity));
+}
+
+.text-sky-500 {
+  --tw-text-opacity: 1;
+  color: rgb(14 165 233 / var(--tw-text-opacity));
+}
+
+.text-sky-950 {
+  --tw-text-opacity: 1;
+  color: rgb(8 47 73 / var(--tw-text-opacity));
+}
+
+.text-sky-900 {
+  --tw-text-opacity: 1;
+  color: rgb(12 74 110 / var(--tw-text-opacity));
 }
 
 .shadow-2xl {
@@ -901,6 +966,18 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-md {
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .transition-transform {
   transition-property: transform;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -910,6 +987,14 @@ video {
 .hover\:-translate-y-1:hover {
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.hover\:border-b-4:hover {
+  border-bottom-width: 4px;
+}
+
+.hover\:border-b-2:hover {
+  border-bottom-width: 2px;
 }
 
 .hover\:bg-blue-700:hover {
@@ -944,9 +1029,22 @@ video {
     display: none;
   }
 
+  .max-md\:hover\:border-b-2:hover {
+    border-bottom-width: 2px;
+  }
+
+  .max-md\:hover\:border-b-4:hover {
+    border-bottom-width: 4px;
+  }
+
   .max-md\:hover\:bg-gray-200:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+  }
+
+  .max-md\:hover\:bg-ijotaik:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(4 54 74 / var(--tw-bg-opacity));
   }
 }
 
@@ -995,6 +1093,21 @@ video {
   .sm\:block {
     display: block;
   }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1020,6 +1133,11 @@ video {
   .lg\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }
 

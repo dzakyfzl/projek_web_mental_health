@@ -13,7 +13,8 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         poppins: ["poppins", "sans-serif"],
-        archivo: ["Archivo Black", "sans-serif"],
+        archivo: ["Archivo", "sans-serif"],
+        pito: ["Nunito", "sans-serif"],
       },
     },
   },
