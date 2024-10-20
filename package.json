@@ -1,9 +1,12 @@
 {
   "name": "web-mental-health",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "router.js",
   "scripts": {
     "dev" : "npx tailwindcss -i ./src/css/input.css -o ./src/css/style.css --watch | node router.js"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "keywords": [],
   "author": "",
