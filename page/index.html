@@ -157,15 +157,56 @@
       <div class="">
         <div class="mt-20 mb-4 xl:my-10">
           <h1
+          id="judul"
             class="text-center font-extrabold font-pito lg:text-5xl sm:text-3xl text-sky-600"
           >
             Persebaran Mental Ilness di Indonesia
           </h1>
         </div>
         <div
-          class="flex justify-center items-center p-10 rounded-2xl bg-gradient-to-bl from-cyan-400 to-green-300 indonesia-map"
+          class="flex justify-center items-center p-10 rounded-2xl bg-gradient-to-bl from-cyan-400 to-green-300"
         >
-          <img class="w-max h-max" src="/src/image/indonesia.svg" alt="map" />
+        <img id="maps" src="/src/image/map/Indonesia.svg">
+        </div>
+        <div class="flex justify-center items-center py-4">
+          <select id="province-selector" class="py-2 px-4 rounded-lg text-black-100 bg-gray-300 font-poppins shadow-md" name="Provinsi" id="prov">
+            <option class="bg-white text-black" value="Indonesia">Indonesia</option>
+            <option class="bg-white text-black" value="Aceh">Aceh</option>
+            <option class="bg-white text-black" value="Sumatera Utara">Sumatera Utara</option>
+            <option class="bg-white text-black" value="Sumatera Barat">Sumatera Barat</option>
+            <option class="bg-white text-black" value="Riau">Riau</option>
+            <option class="bg-white text-black" value="Jambi">Jambi</option>
+            <option class="bg-white text-black" value="Bengkulu">Bengkulu</option>
+            <option class="bg-white text-black" value="Sumatera Selatan">Sumatera Selatan</option>
+            <option class="bg-white text-black" value="Lampung">Lampung</option>
+            <option class="bg-white text-black" value="Bangka Belitung">Bangka Belitung</option>
+            <option class="bg-white text-black" value="Kepulauan Riau">Kepulauan Riau</option>
+            <option class="bg-white text-black" value="Banten">Banten</option>
+            <option class="bg-white text-black" value="Jakarta">Jakarta</option>
+            <option class="bg-white text-black" value="Jawa Barat">Jawa Barat</option>
+            <option class="bg-white text-black" value="Jawa Tengah">Jawa Tengah</option>
+            <option class="bg-white text-black" value="Yogyakarta">Yogyakarta</option>
+            <option class="bg-white text-black" value="Jawa Timur">Jawa Timur</option>
+            <option class="bg-white text-black" value="Bali">Bali</option>
+            <option class="bg-white text-black" value="Nusa Tenggara Timur">Nusa Tenggara Timur</option>
+            <option class="bg-white text-black" value="Nusa Tenggara Barat">Nusa Tenggara Barat</option>
+            <option class="bg-white text-black" value="Kalimantan Barat">Kalimantan Barat</option>
+            <option class="bg-white text-black" value="Kalimantan Timur">Kalimantan Timur</option>
+            <option class="bg-white text-black" value="Kalimantan Selatan">Kalimantan Selatan</option>
+            <option class="bg-white text-black" value="Kalimantan Tengah">Kalimantan Tengah</option>
+            <option class="bg-white text-black" value="Kalimantan Utara">Kalimantan Utara</option>
+            <option class="bg-white text-black" value="Sulawesi Utara">Sulawesi Utara</option>
+            <option class="bg-white text-black" value="Sulawesi Tenggara">Sulawesi Tenggara</option>
+            <option class="bg-white text-black" value="Sulawesi Selatan">Sulawesi Selatan</option>
+            <option class="bg-white text-black" value="Sulawesi Barat">Sulawesi Barat</option>
+            <option class="bg-white text-black" value="Sulawesi Tengah">Sulawesi Tengah</option>
+            <option class="bg-white text-black" value="Gorontalo">Gorontalo</option>
+            <option class="bg-white text-black" value="Maluku">Maluku</option>
+            <option class="bg-white text-black" value="Maluku Utara">Maluku Utara</option>
+            <option class="bg-white text-black" value="Papua">Papua</option>
+            <option class="bg-white text-black" value="Papua Barat">Papua Barat</option>
+          </select>
+          <button onclick="showmap()" class="px-4 py-2 mx-2 text-gray-200 bg-blue-500 shadow-md rounded-lg" >Select</button>
         </div>
         <div class="sm:block lg:flex justify-between">
           <div

@@ -9,3 +9,13 @@ function openSidebar(){
 function closeSidebar(){
     sidebar.classList.add('-translate-x-full');
 }
+
+//Konfigurasi Map Indonesia
+
+
+function showmap(){
+    province = document.getElementById('province-selector').value
+    console.log(`${province} Selected`)
+    map = document.getElementById('maps');
+    map.setAttribute('src',`/src/image/map/${province}.svg`);
+}
